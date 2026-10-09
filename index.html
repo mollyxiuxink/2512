@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Góc Nhỏ Của Tui 🌸✨ | Welcome to My Pastel World</title>
   
-  <!-- Google Fonts: Quicksand & Comfortaa cho vibe tròn trịa, siêu đáng yêu -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Quicksand:wght@500;600;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Tone.js for cute sounds -->
+  <!-- Tone.js cho âm thanh -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
 
   <script>
@@ -59,7 +59,6 @@
   </script>
 
   <style>
-    /* Tuỳ biến thanh cuộn kẹo ngọt */
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -87,7 +86,6 @@
       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewport='0 0 24 24' style='fill:%23ff6b8b;'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>"), auto;
     }
 
-    /* Hiệu ứng bóng pastel mềm mại */
     .kawaii-shadow {
       box-shadow: 0 10px 25px -5px rgba(255, 133, 162, 0.25), 0 8px 10px -6px rgba(255, 133, 162, 0.15);
     }
@@ -98,7 +96,6 @@
       box-shadow: 0 12px 30px rgba(244, 114, 182, 0.22);
     }
 
-    /* Hiệu ứng tia hạt chuột */
     .sparkle-trail {
       position: fixed;
       pointer-events: none;
@@ -113,13 +110,11 @@
 </head>
 <body class="text-rose-950 selection:bg-rose-200 selection:text-rose-700 relative min-h-screen">
 
-  <!-- Canvas hiệu ứng mưa tim và cánh hoa -->
   <canvas id="fallingCanvas" class="fixed inset-0 pointer-events-none z-10 w-full h-full"></canvas>
 
   <header class="sticky top-4 z-40 max-w-5xl mx-auto px-4">
     <nav class="bg-white/85 backdrop-blur-md border-2 border-rose-200/80 rounded-full px-5 py-3 kawaii-shadow flex items-center justify-between transition-all duration-300">
       
-      <!-- Logo dễ thương -->
       <a href="#home" class="flex items-center gap-2 group">
         <span class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-400 to-rose-300 flex items-center justify-center text-white text-lg shadow-sm group-hover:scale-110 transition-transform">
           🐾
@@ -132,7 +127,6 @@
         </div>
       </a>
 
-      <!-- Menu links desktop -->
       <div class="hidden md:flex items-center gap-1 font-semibold text-rose-700 text-sm">
         <a href="#about" class="px-3.5 py-1.5 rounded-full hover:bg-rose-100/70 hover:text-rose-600 transition">🌸 Về Tui</a>
         <a href="#gallery" class="px-3.5 py-1.5 rounded-full hover:bg-rose-100/70 hover:text-rose-600 transition">📸 Kỷ Niệm</a>
@@ -140,7 +134,6 @@
         <a href="#contact" class="px-3.5 py-1.5 rounded-full hover:bg-rose-100/70 hover:text-rose-600 transition">💌 Nhắn Tín</a>
       </div>
 
-      <!-- Action buttons: Mưa hoa & Nút tim -->
       <div class="flex items-center gap-2">
         <button id="toggleRainBtn" title="Bật/Tắt mưa tim" class="w-9 h-9 rounded-full bg-rose-100 hover:bg-rose-200 text-rose-500 flex items-center justify-center transition active:scale-95 text-sm">
           <i class="fa-solid fa-cloud-sun-rain"></i>
@@ -155,9 +148,8 @@
 
   <main class="max-w-5xl mx-auto px-4 pt-8 pb-20 space-y-20 relative z-20">
 
+    <!-- Trang chủ / Giới thiệu đầu -->
     <section id="home" class="pt-6 sm:pt-10 flex flex-col items-center text-center">
-      
-      <!-- Khung avatar có viền bánh kem và tai mèo đáng yêu -->
       <div class="relative group cursor-pointer mb-6" id="avatarBox">
         <div class="absolute -top-5 left-1/2 -translate-x-1/2 flex items-center justify-between w-36 px-2 pointer-events-none z-10 text-rose-400 text-xl font-bold animate-bounce-slow">
           <span>🐾</span>
@@ -165,13 +157,10 @@
           <span>✨</span>
         </div>
         
-        <!-- Vòng hào quang lấp lánh -->
         <div class="w-44 h-44 sm:w-48 sm:h-48 rounded-full p-2 bg-gradient-to-tr from-pink-300 via-rose-200 to-amber-200 animate-float shadow-xl relative">
-          <!-- Huy hiệu nhỏ -->
           <div class="absolute bottom-2 right-2 bg-white text-rose-500 p-2 rounded-full shadow-md text-sm border-2 border-rose-200 group-hover:scale-125 transition">
             💖
           </div>
-          <!-- Ảnh đại diện -->
           <img 
             src="anhavt.png" 
             alt="Miu Avatar" 
@@ -181,12 +170,10 @@
         </div>
       </div>
 
-      <!-- Tagline & Badge -->
       <div class="inline-flex items-center gap-2 bg-white/90 border border-pink-200 text-rose-600 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold kawaii-shadow-sm mb-4">
         <span>🌱 Chào mừng đến với vũ trụ của Molly!</span>
       </div>
 
-      <!-- Tên & Châm ngôn -->
       <h1 class="text-3xl sm:text-5xl font-bubble font-bold text-rose-600 mb-3 tracking-wide">
         Tớ là <span class="bg-gradient-to-r from-rose-500 to-pink-400 bg-clip-text text-transparent underline decoration-wavy decoration-rose-300">Molly</span> 🌸
       </h1>
@@ -194,7 +181,6 @@
         "Cuộc sống quá ngắn để không thưởng thức một ly trà sữa ngọt ngào và vuốt ve những bé mèo béo ú!"
       </p>
 
-      <!-- Nút thao tác nhanh -->
       <div class="flex flex-wrap items-center justify-center gap-3">
         <a href="#gallery" class="px-6 py-2.5 rounded-full bg-rose-400 hover:bg-rose-500 text-white font-bold text-sm kawaii-shadow transition-transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2">
           <i class="fa-solid fa-camera-retro"></i> Xem Ảnh Của Tui
@@ -205,6 +191,7 @@
       </div>
     </section>
 
+    <!-- Về bản thân -->
     <section id="about" class="scroll-mt-24">
       <div class="text-center mb-10">
         <h2 class="text-2xl sm:text-3xl font-bubble font-bold text-rose-600 flex items-center justify-center gap-2">
@@ -214,795 +201,4 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Card 1: Giới thiệu vui nhộn -->
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow hover:rotate-1 transition-all">
-          <div class="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center text-rose-500 text-2xl mb-4 shadow-inner">
-            🍭
-          </div>
-          <h3 class="font-bubble font-bold text-lg text-rose-600 mb-2">Tính Cách & Năng Lượng</h3>
-          <p class="text-rose-900/80 text-sm leading-relaxed">
-            Là một người hướng ngoại thích ở nhà một mình! Thích chụp ảnh film, ghiền đồ ngọt và luôn thấy tràn ngập cảm hứng khi thời tiết hơi se lạnh.
-          </p>
-          <div class="mt-4 pt-4 border-t border-rose-100 flex flex-wrap gap-2">
-            <span class="bg-rose-50 text-rose-600 text-xs px-2.5 py-1 rounded-full font-semibold">#HayCười</span>
-            <span class="bg-rose-50 text-rose-600 text-xs px-2.5 py-1 rounded-full font-semibold">#NghiệnMèo</span>
-            <span class="bg-rose-50 text-rose-600 text-xs px-2.5 py-1 rounded-full font-semibold">#LãngMạn</span>
-          </div>
-        </div>
-
-        <!-- Card 2: Bảng chỉ số cá nhân (Zodiac, MBTI, Favourite) -->
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow hover:-rotate-1 transition-all flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-500 text-2xl mb-4 shadow-inner">
-              ⭐
-            </div>
-            <h3 class="font-bubble font-bold text-lg text-rose-600 mb-3">Hồ Sơ Mini</h3>
-            <ul class="space-y-2.5 text-sm text-rose-900/80">
-              <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
-                <span class="font-semibold text-rose-700">🎂 Cung Hoàng Đạo:</span>
-                <span class="font-bold text-rose-500">Kim Ngưu ♉</span>
-              </li>
-              <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
-                <span class="font-semibold text-rose-700">🧠 MBTI:</span>
-                <span class="font-bold text-purple-600">ENFP - Người truyền cảm hứng</span>
-              </li>
-              <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
-                <span class="font-semibold text-rose-700">🎨 Màu Yêu Thích:</span>
-                <span class="font-bold text-pink-500">Baby Pink & Kem Sữa 🍦</span>
-              </li>
-              <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
-                <span class="font-semibold text-rose-700">🧋 Mức Đường Trà Sữa:</span>
-                <span class="font-bold text-rose-500">50% đường 70% đá</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Card 3: Sở thích đáng iu -->
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow hover:rotate-1 transition-all">
-          <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-500 text-2xl mb-4 shadow-inner">
-            🍓
-          </div>
-          <h3 class="font-bubble font-bold text-lg text-rose-600 mb-2">Sở Thích Hằng Ngày</h3>
-          <div class="space-y-2 text-sm text-rose-900/80">
-            <div class="flex items-center gap-2">
-              <span class="text-rose-400">🐾</span>
-              <span>Chăm sóc 2 'hoàng thượng' Mập & Mun</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-rose-400">🥐</span>
-              <span>Săn lùng các tiệm bánh ngọt xinh xắn</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-rose-400">🎧</span>
-              <span>Nghe nhạc indie pop & lofi lúc hoàng hôn</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-rose-400">🪴</span>
-              <span>Trồng sen đá (dù thỉnh thoảng tưới úng)</span>
-            </div>
-          </div>
-          <div class="mt-4 p-3 bg-amber-50 rounded-2xl border border-amber-200/60 text-xs text-amber-700 font-medium flex items-center gap-2">
-            <span>💡</span> Tips: Rủ mình đi cà phê xinh là có mặt ngay sau 15p!
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="gallery" class="scroll-mt-24">
-      <div class="text-center mb-8">
-        <h2 class="text-2xl sm:text-3xl font-bubble font-bold text-rose-600 flex items-center justify-center gap-2">
-          <span>📸</span> Album Kỷ Niệm Của Tui <span>🎀</span>
-        </h2>
-        <p class="text-rose-700/70 text-sm mt-1">Những khoảnh khắc lấp lánh được chụp lại qua lăng kính mộng mơ</p>
-
-        <!-- Bộ lọc Album ảnh -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mt-6" id="filterContainer">
-          <button onclick="filterPhotos('all')" class="filter-btn active bg-rose-400 text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm transition">
-            ✨ Tất cả
-          </button>
-          <button onclick="filterPhotos('daily')" class="filter-btn bg-white text-rose-600 hover:bg-rose-100/70 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-rose-200 transition">
-            ☕ Đời thường
-          </button>
-          <button onclick="filterPhotos('travel')" class="filter-btn bg-white text-rose-600 hover:bg-rose-100/70 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-rose-200 transition">
-            🏖️ Đi chơi
-          </button>
-          <button onclick="filterPhotos('cats')" class="filter-btn bg-white text-rose-600 hover:bg-rose-100/70 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-rose-200 transition">
-            🐱 Meo meo
-          </button>
-        </div>
-      </div>
-
-      <!-- Lưới ảnh Polaroid -->
-      <div id="photoGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-4">
-        
-        <!-- Ảnh 1 -->
-        <div class="photo-item daily group relative" data-category="daily">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-rose-200/80 backdrop-blur-sm -rotate-3 z-10 rounded-sm border border-rose-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:rotate-1 transition-all duration-300 cursor-pointer" onclick="openLightbox(0)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="chrome-capture-2026-10-09.gif" alt="Ngày nắng đẹp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Coffee+Time'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">☕ Cafe</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Một buổi chiều nhiều nắng ☀️</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Tiệm cà phê góc phố quen</p>
-          </div>
-        </div>
-
-        <!-- Ảnh 2 -->
-        <div class="photo-item travel group relative" data-category="travel">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-pink-200/80 backdrop-blur-sm rotate-2 z-10 rounded-sm border border-pink-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:-rotate-1 transition-all duration-300 cursor-pointer" onclick="openLightbox(1)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Biển xanh" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Beach+Trip'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">🏖️ Biển</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Nạp vitamin sea thôi nè 🌊</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Chuyến đi Đà Nẵng cùng bạn thân</p>
-          </div>
-        </div>
-
-        <!-- Ảnh 3 -->
-        <div class="photo-item cats group relative" data-category="cats">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-amber-200/80 backdrop-blur-sm -rotate-2 z-10 rounded-sm border border-amber-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:rotate-2 transition-all duration-300 cursor-pointer" onclick="openLightbox(2)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Bé mèo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Cute+Cat'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">🐾 Boss</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Bé Mập đang dỗi tui 🐱</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Vì bị bắt ăn kiêng 1 ngày</p>
-          </div>
-        </div>
-
-        <!-- Ảnh 4 -->
-        <div class="photo-item daily group relative" data-category="daily">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-purple-200/80 backdrop-blur-sm rotate-3 z-10 rounded-sm border border-purple-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:-rotate-2 transition-all duration-300 cursor-pointer" onclick="openLightbox(3)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Bánh ngọt" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Pastry+Lover'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">🍰 Bánh</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Croissant bơ tươi nóng giòn 🥐</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Món ăn chữa lành tâm hồn</p>
-          </div>
-        </div>
-
-        <!-- Ảnh 5 -->
-        <div class="photo-item travel group relative" data-category="travel">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-rose-200/80 backdrop-blur-sm -rotate-1 z-10 rounded-sm border border-rose-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:rotate-1 transition-all duration-300 cursor-pointer" onclick="openLightbox(4)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="chrome-capture-2026-10-09.gif" alt="Hoàng hôn" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Sunset+View'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">🌅 Sunset</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Hoàng hôn tím lịm tìm sim 💜</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Trên đỉnh đồi lộng gió</p>
-          </div>
-        </div>
-
-        <!-- Ảnh 6 -->
-        <div class="photo-item cats group relative" data-category="cats">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-pink-200/80 backdrop-blur-sm rotate-2 z-10 rounded-sm border border-pink-300 shadow-sm pointer-events-none"></div>
-          <div class="bg-white p-3.5 pb-5 rounded-2xl polaroid-shadow transform group-hover:-translate-y-2 group-hover:-rotate-2 transition-all duration-300 cursor-pointer" onclick="openLightbox(5)">
-            <div class="overflow-hidden rounded-xl aspect-square mb-3 relative bg-rose-50">
-              <img src="https://.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&q=80" alt="Mèo đeo kính" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/ffe4e9/9f1239?text=Mun+Cool'">
-              <span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-0.5 rounded-full text-rose-500 font-bold shadow-sm">🕶️ Ngầu</span>
-            </div>
-            <p class="font-hand text-xl font-bold text-rose-700 text-center">Bé Mun chuẩn bị đi hẹn hò 🕶️</p>
-            <p class="text-[11px] text-rose-400 text-center mt-0.5">Trông ngầu bá cháy bọ chét</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="music" class="scroll-mt-24">
-      <div class="bg-gradient-to-r from-pink-200/70 via-rose-100 to-amber-100/70 border-2 border-rose-200 rounded-3xl p-6 sm:p-8 kawaii-shadow relative overflow-hidden">
-        
-        <!-- Icon trang trí nền -->
-        <div class="absolute -right-6 -bottom-6 text-rose-200/40 text-9xl pointer-events-none select-none">
-          <i class="fa-solid fa-compact-disc"></i>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
-          
-          <!-- Đĩa nhạc xoay -->
-          <div class="relative flex-shrink-0">
-            <div id="vinylDisc" class="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-slate-900 border-4 border-white shadow-lg flex items-center justify-center transition-all duration-700">
-              <div class="w-14 h-14 rounded-full bg-rose-400 border-2 border-dashed border-white/60 flex items-center justify-center text-white text-xs font-bold text-center">
-                LO-FI 🌸
-              </div>
-            </div>
-            <div class="absolute top-1 right-1 text-lg animate-wiggle">🎵</div>
-          </div>
-
-          <!-- Thông tin bài hát & Controls -->
-          <div class="flex-1 text-center md:text-left space-y-3">
-            <div class="inline-block bg-white/80 text-rose-600 text-xs px-3 py-1 rounded-full font-bold border border-rose-200 shadow-sm">
-              🎧 My Favorite Chill Vibes
-            </div>
-            <h3 id="currentSongTitle" class="text-xl sm:text-2xl font-bubble font-bold text-rose-700">
-              Cupid (Twin Ver.) - Chilled Melody
-            </h3>
-            <p id="currentSongArtist" class="text-xs text-rose-500 font-semibold">
-              Đang phát nhạc nền nhẹ nhàng được tạo trực tiếp bằng Tone.js 🎶
-            </p>
-
-            <!-- Thanh tiến trình minh hoạ -->
-            <div class="w-full bg-white/70 h-2.5 rounded-full overflow-hidden shadow-inner cursor-pointer" id="progressBarContainer">
-              <div id="progressBar" class="bg-rose-400 h-full w-1/3 rounded-full transition-all"></div>
-            </div>
-
-            <!-- Các nút điều khiển máy nhạc -->
-            <div class="flex items-center justify-center md:justify-start gap-4 pt-2">
-              <button onclick="prevSong()" class="w-10 h-10 rounded-full bg-white hover:bg-rose-50 text-rose-600 border border-rose-200 flex items-center justify-center shadow-sm active:scale-95 transition">
-                <i class="fa-solid fa-backward-step"></i>
-              </button>
-              <button id="playPauseBtn" onclick="togglePlayMusic()" class="w-12 h-12 rounded-full bg-rose-400 hover:bg-rose-500 text-white flex items-center justify-center shadow-md active:scale-90 transition text-lg">
-                <i class="fa-solid fa-play" id="playIcon"></i>
-              </button>
-              <button onclick="nextSong()" class="w-10 h-10 rounded-full bg-white hover:bg-rose-50 text-rose-600 border border-rose-200 flex items-center justify-center shadow-sm active:scale-95 transition">
-                <i class="fa-solid fa-forward-step"></i>
-              </button>
-              <span id="soundBadge" class="text-xs text-rose-600 bg-white/80 px-2.5 py-1 rounded-full border border-rose-200">
-                Nhấn Play để nghe nhạc thư giãn nhen!
-              </span>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="scroll-mt-24">
-      <div class="text-center mb-10">
-        <h2 class="text-2xl sm:text-3xl font-bubble font-bold text-rose-600 flex items-center justify-center gap-2">
-          <span>💌</span> Gửi Lời Nhắn Cho Miu <span>📮</span>
-        </h2>
-        <p class="text-rose-700/70 text-sm mt-1">Đừng ngại để lại một lời chúc hoặc lời nhắn đáng yêu nhé!</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        
-        <!-- Form gửi lời nhắn nhỏ nhắn -->
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 sm:p-7 kawaii-shadow relative">
-          <div class="absolute -top-3 right-6 bg-pink-100 text-rose-600 text-xs font-bold px-3 py-1 rounded-full border border-rose-300">
-            Hòm Thư Kẹo Ngọt 🍬
-          </div>
-
-          <form id="messageForm" onsubmit="handleMessageSubmit(event)" class="space-y-4">
-            <div>
-              <label class="block text-xs font-bold text-rose-700 mb-1" for="senderName">
-                Tên / Biệt danh của bạn:
-              </label>
-              <input 
-                type="text" 
-                id="senderName" 
-                required 
-                placeholder="VD: Bạn thỏ trắng 🐰"
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
-              >
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-rose-700 mb-1" for="senderMood">
-                Tâm trạng hôm nay của bạn thế nào?
-              </label>
-              <select 
-                id="senderMood" 
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition cursor-pointer"
-              >
-                <option value="🥰">🥰 Rất vui vẻ và yêu đời</option>
-                <option value="😴">😴 Hơi buồn ngủ nhưng vẫn mỉm cười</option>
-                <option value="🧁">🧁 Đang thèm một miếng bánh ngọt</option>
-                <option value="🥺">🥺 Cần một cái ôm ấm áp</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-rose-700 mb-1" for="senderMessage">
-                Lời nhắn gửi Miu:
-              </label>
-              <textarea 
-                id="senderMessage" 
-                rows="4" 
-                required 
-                placeholder="Viết vài dòng chia sẻ ngọt ngào tại đây..."
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
-              ></textarea>
-            </div>
-
-            <button 
-              type="submit" 
-              class="w-full py-3 rounded-2xl bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white font-bold text-sm shadow-md hover:shadow-lg active:scale-98 transition flex items-center justify-center gap-2"
-            >
-              <i class="fa-solid fa-paper-plane"></i> Gửi Tin Ngay & Thả Thính ✨
-            </button>
-          </form>
-
-          <!-- Toast thông báo gửi tin -->
-          <div id="formSuccessToast" class="hidden mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-700 text-xs font-semibold text-center animate-bounce-slow">
-            🎉 Đã nhận được lời nhắn siêu cưng của bạn rồi nha! Cảm ơn bạn iu! 💖
-          </div>
-        </div>
-
-        <!-- Các kênh liên hệ & Mạng xã hội pastel -->
-        <div class="space-y-4">
-          
-          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow">
-            <h3 class="font-bubble font-bold text-lg text-rose-600 mb-3 flex items-center gap-2">
-              <span>🌟</span> Kết Nối Với Miu Nhé
-            </h3>
-            <p class="text-xs text-rose-800/80 mb-5 leading-relaxed">
-              Miu luôn online ở các trang mạng xã hội dưới này. Nhắn cho Miu để trò chuyện, hỏi công thức bánh hoặc đơn giản là chia sẻ ảnh mèo nha!
-            </p>
-
-            <div class="grid grid-cols-2 gap-3">
-              <!-- Facebook -->
-              <a href="https://facebook.com" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-blue-50/70 hover:bg-blue-100 text-blue-600 border border-blue-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-blue-500 shadow-sm text-sm">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </span>
-                <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Facebook</div>
-                  <div class="text-[10px] text-blue-400 truncate">fb.com/miumiu</div>
-                </div>
-              </a>
-
-              <!-- Instagram -->
-              <a href="https://instagram.com" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-pink-50/70 hover:bg-pink-100 text-pink-600 border border-pink-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-pink-500 shadow-sm text-sm">
-                  <i class="fa-brands fa-instagram"></i>
-                </span>
-                <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Instagram</div>
-                  <div class="text-[10px] text-pink-400 truncate">@miu.pastel</div>
-                </div>
-              </a>
-
-              <!-- TikTok -->
-              <a href="https://tiktok.com" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-stone-50 hover:bg-stone-100 text-stone-800 border border-stone-200 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-stone-800 shadow-sm text-sm">
-                  <i class="fa-brands fa-tiktok"></i>
-                </span>
-                <div class="overflow-hidden">
-                  <div class="text-xs font-bold">TikTok</div>
-                  <div class="text-[10px] text-stone-500 truncate">@miu_vlogs</div>
-                </div>
-              </a>
-
-              <!-- Threads -->
-              <a href="https://threads.net" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-purple-50/70 hover:bg-purple-100 text-purple-600 border border-purple-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-purple-600 shadow-sm text-sm">
-                  <i class="fa-brands fa-threads"></i>
-                </span>
-                <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Threads</div>
-                  <div class="text-[10px] text-purple-400 truncate">@miu.thoughts</div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Email trực tiếp -->
-            <div class="mt-4 p-3.5 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-between">
-              <div class="flex items-center gap-2.5 text-xs text-rose-700 font-semibold truncate">
-                <i class="fa-regular fa-envelope text-base text-rose-500"></i>
-                <span id="myEmailText">minhmiu.kawaii@gmail.com</span>
-              </div>
-              <button onclick="copyEmail()" class="text-xs bg-white text-rose-500 hover:bg-rose-100 font-bold px-3 py-1.5 rounded-xl border border-rose-300 shadow-sm transition active:scale-95">
-                Sao chép
-              </button>
-            </div>
-          </div>
-
-          <!-- Lời chúc ngẫu nhiên (Fortune Cookie) -->
-          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow text-center">
-            <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">🥠 Bánh May Mắn Của Ngày</span>
-            <p id="fortuneText" class="font-hand text-xl text-rose-700 mt-1 font-bold">
-              "Hôm nay bạn sẽ gặp một điều bất ngờ ngọt ngào như kẹo bông gòn!"
-            </p>
-            <button onclick="newFortune()" class="mt-2 text-xs text-rose-500 hover:text-rose-700 font-bold underline decoration-dotted">
-              Đổi lời chúc khác ✨
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="border-t-2 border-rose-200/80 bg-white/70 backdrop-blur-md py-8 text-center relative z-20 text-rose-600 text-xs">
-    <div class="max-w-md mx-auto px-4 space-y-2">
-      <div class="text-base font-bubble font-bold text-rose-500 flex items-center justify-center gap-2">
-        <span>🐾</span> Made with Lots of Sugar & Love <span>💖</span>
-      </div>
-      <p class="text-rose-800/60">
-        © 2026 Góc Nhỏ Của Miu. Thiết kế tràn ngập vibe kẹo ngọt dành cho những ngày tươi sáng.
-      </p>
-      <div class="pt-2 flex items-center justify-center gap-3 text-sm text-rose-400">
-        <span>🌸</span>
-        <span>🍓</span>
-        <span>🍦</span>
-        <span>✨</span>
-        <span>🧸</span>
-      </div>
-    </div>
-  </footer>
-
-  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-4 border-4 border-rose-200 shadow-2xl relative transform transition-all scale-95" id="lightboxContent">
-      <button onclick="closeLightbox()" class="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-rose-400 text-white font-bold text-base flex items-center justify-center shadow-md hover:bg-rose-500 transition">
-        ✕
-      </button>
-      <div class="overflow-hidden rounded-2xl aspect-square mb-3 bg-pink-50">
-        <img id="lightboxImg" src="" alt="Zoom preview" class="w-full h-full object-cover">
-      </div>
-      <h4 id="lightboxTitle" class="font-bubble font-bold text-lg text-rose-600 text-center">Tiêu đề ảnh</h4>
-      <p id="lightboxDesc" class="text-xs text-rose-400 text-center mt-1">Mô tả ngắn</p>
-    </div>
-  </div>
-
-  <script>
-    // Dữ liệu ảnh phục vụ Lightbox
-    const galleryData = [
-      {
-        src: "chrome-capture-2026-10-09.gif",
-        title: "Discord của tớ đây nhé",
-        desc: "có thể add tớ để join vào các sever của tớ nhé."
-      },
-      {
-        src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
-        title: "Nạp vitamin sea thôi nè 🌊",
-        desc: "Sóng vỗ rì rào và bờ cát trắng mịn, ngày hè tuyệt vời nhất năm!"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80",
-        title: "Bé Mập đang dỗi tui 🐱",
-        desc: "Vì bị cắt bớt một muỗng pate để giữ dáng mà cả buổi chiều không thèm nhìn mặt sen."
-      },
-      {
-        src: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80",
-        title: "Croissant bơ tươi nóng giòn 🥐",
-        desc: "Thơm nức mùi bơ Pháp, giòn rụm từng lớp bánh. Cắn một miếng là tan biến mọi muộn phiền."
-      },
-      {
-        src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80",
-        title: "Hoàng hôn tím lịm tìm sim 💜",
-        desc: "Bầu trời chuyển màu pastel kỳ diệu như một bức tranh sơn dầu đang khô."
-      },
-      {
-        src: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80",
-        title: "Bé Mun chuẩn bị đi hẹn hò 🕶️",
-        desc: "Đeo chiếc kính tí hon và làm dáng chuẩn model ảnh bìa tạp chí."
-      }
-    ];
-
-    // Lightbox Controls
-    function openLightbox(index) {
-      const modal = document.getElementById('lightboxModal');
-      const img = document.getElementById('lightboxImg');
-      const title = document.getElementById('lightboxTitle');
-      const desc = document.getElementById('lightboxDesc');
-      const content = document.getElementById('lightboxContent');
-
-      const data = galleryData[index];
-      if (!data) return;
-
-      img.src = data.src;
-      title.textContent = data.title;
-      desc.textContent = data.desc;
-
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-      setTimeout(() => {
-        content.classList.remove('scale-95');
-        content.classList.add('scale-100');
-      }, 10);
-    }
-
-    function closeLightbox() {
-      const modal = document.getElementById('lightboxModal');
-      const content = document.getElementById('lightboxContent');
-      content.classList.remove('scale-100');
-      content.classList.add('scale-95');
-      setTimeout(() => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-      }, 150);
-    }
-
-    document.getElementById('lightboxModal').addEventListener('click', (e) => {
-      if (e.target.id === 'lightboxModal') closeLightbox();
-    });
-
-    // Lọc ảnh
-    function filterPhotos(cat) {
-      const items = document.querySelectorAll('.photo-item');
-      const buttons = document.querySelectorAll('.filter-btn');
-
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-rose-400', 'text-white');
-        btn.classList.add('bg-white', 'text-rose-600');
-      });
-
-      // Highlight active button
-      event.target.classList.remove('bg-white', 'text-rose-600');
-      event.target.classList.add('bg-rose-400', 'text-white');
-
-      items.forEach(item => {
-        if (cat === 'all' || item.dataset.category === cat) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-
-    // Nút tim đếm số lượt yêu thích
-    let likeCount = 128;
-    const likeBtn = document.getElementById('likeCounterBtn');
-    const likeText = document.getElementById('likeCount');
-    likeBtn.addEventListener('click', () => {
-      likeCount++;
-      likeText.textContent = likeCount;
-      likeBtn.classList.add('scale-110');
-      setTimeout(() => likeBtn.classList.remove('scale-110'), 200);
-      spawnHeart(window.innerWidth / 2, 80);
-    });
-
-    // Avatar nhấp nháy dễ thương khi click
-    const avatar = document.getElementById('avatarBox');
-    avatar.addEventListener('click', () => {
-      const rect = avatar.getBoundingClientRect();
-      for (let i = 0; i < 6; i++) {
-        spawnHeart(rect.left + rect.width / 2 + (Math.random() * 60 - 30), rect.top + (Math.random() * 40));
-      }
-    });
-
-    let isPlaying = false;
-    let synth = null;
-    let musicLoop = null;
-    const disc = document.getElementById('vinylDisc');
-    const playIcon = document.getElementById('playIcon');
-    const soundBadge = document.getElementById('soundBadge');
-
-    const songs = [
-      { title: "Cupid's Lofi Breeze 🌸", artist: "Pastel Chill Vibes" },
-      { title: "Strawberry Mochi Walk 🍓", artist: "Miu Sweet Beats" },
-      { title: "Kitten Napping in Sun 🐱", artist: "Sunny Lo-Fi Garden" }
-    ];
-    let currentSongIdx = 0;
-
-    function initToneMusic() {
-      // Bộ tổng hợp âm thanh FM Synth tạo nốt nhạc chuông gió ngọt ngào
-      synth = new Tone.PolySynth(Tone.Synth, {
-        oscillator: { type: "triangle" },
-        envelope: { attack: 0.05, decay: 0.3, sustain: 0.4, release: 1.2 }
-      }).toDestination();
-      synth.volume.value = -12;
-
-      const chords = [
-        ["C4", "E4", "G4", "B4"],
-        ["A3", "C4", "E4", "G4"],
-        ["F3", "A3", "C4", "E4"],
-        ["G3", "B3", "D4", "F4"]
-      ];
-      let chordIndex = 0;
-
-      musicLoop = new Tone.Loop(time => {
-        const chord = chords[chordIndex % chords.length];
-        synth.triggerAttackRelease(chord, "2n", time);
-        chordIndex++;
-      }, "2n");
-    }
-
-    async function togglePlayMusic() {
-      await Tone.start();
-      if (!synth) initToneMusic();
-
-      if (!isPlaying) {
-        Tone.Transport.bpm.value = 75;
-        musicLoop.start(0);
-        Tone.Transport.start();
-        isPlaying = true;
-        playIcon.classList.remove('fa-play');
-        playIcon.classList.add('fa-pause');
-        disc.classList.add('animate-spin');
-        disc.style.animationDuration = '8s';
-        soundBadge.textContent = "Đang phát giai điệu thư giãn 💖";
-      } else {
-        Tone.Transport.stop();
-        musicLoop.stop();
-        isPlaying = false;
-        playIcon.classList.remove('fa-pause');
-        playIcon.classList.add('fa-play');
-        disc.classList.remove('animate-spin');
-        soundBadge.textContent = "Nhạc đang tạm dừng 🌸";
-      }
-    }
-
-    function nextSong() {
-      currentSongIdx = (currentSongIdx + 1) % songs.length;
-      updateSongInfo();
-    }
-    function prevSong() {
-      currentSongIdx = (currentSongIdx - 1 + songs.length) % songs.length;
-      updateSongInfo();
-    }
-    function updateSongInfo() {
-      document.getElementById('currentSongTitle').textContent = songs[currentSongIdx].title;
-      document.getElementById('currentSongArtist').textContent = songs[currentSongIdx].artist;
-    }
-
-    const canvas = document.getElementById('fallingCanvas');
-    const ctx = canvas.getContext('2d');
-    let width = canvas.width = window.innerWidth;
-    let height = canvas.height = window.innerHeight;
-    let rainActive = true;
-
-    window.addEventListener('resize', () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
-
-    const particles = [];
-    const emojis = ['🌸', '💖', '✨', '🍓', '🎀'];
-
-    class Particle {
-      constructor() {
-        this.reset();
-      }
-      reset() {
-        this.x = Math.random() * width;
-        this.y = -20;
-        this.size = 12 + Math.random() * 10;
-        this.speedY = 0.6 + Math.random() * 1.2;
-        this.speedX = (Math.random() - 0.5) * 1;
-        this.char = emojis[Math.floor(Math.random() * emojis.length)];
-        this.opacity = 0.3 + Math.random() * 0.4;
-        this.rotation = Math.random() * 360;
-        this.rotSpeed = (Math.random() - 0.5) * 1.5;
-      }
-      update() {
-        this.y += this.speedY;
-        this.x += this.speedX;
-        this.rotation += this.rotSpeed;
-        if (this.y > height + 20) {
-          this.reset();
-        }
-      }
-      draw() {
-        ctx.save();
-        ctx.globalAlpha = this.opacity;
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.rotation * Math.PI / 180);
-        ctx.font = `${this.size}px serif`;
-        ctx.fillText(this.char, 0, 0);
-        ctx.restore();
-      }
-    }
-
-    // Giảm số lượng hạt xuống 6 để bớt hoa mắt
-    for (let i = 0; i < 6; i++) {
-      particles.push(new Particle());
-    }
-
-    function animateParticles() {
-      ctx.clearRect(0, 0, width, height);
-      if (rainActive) {
-        particles.forEach(p => {
-          p.update();
-          p.draw();
-        });
-      }
-      requestAnimationFrame(animateParticles);
-    }
-    animateParticles();
-
-    // Nút bật/tắt mưa hoa
-    const toggleRainBtn = document.getElementById('toggleRainBtn');
-    toggleRainBtn.addEventListener('click', () => {
-      rainActive = !rainActive;
-      toggleRainBtn.classList.toggle('text-rose-300', !rainActive);
-      toggleRainBtn.classList.toggle('text-rose-500', rainActive);
-    });
-
-    window.addEventListener('mousemove', (e) => {
-      if (Math.random() < 0.2) {
-        createSparkle(e.clientX, e.clientY);
-      }
-    });
-
-    function createSparkle(x, y) {
-      const el = document.createElement('div');
-      el.className = 'sparkle-trail';
-      el.textContent = ['✨', '💖', '⭐', '🌸'][Math.floor(Math.random() * 4)];
-      el.style.left = `${x - 10}px`;
-      el.style.top = `${y - 10}px`;
-      el.style.fontSize = `${12 + Math.random() * 10}px`;
-      document.body.appendChild(el);
-      setTimeout(() => el.remove(), 1100);
-    }
-
-    function spawnHeart(x, y) {
-      const heart = document.createElement('div');
-      heart.textContent = '💖';
-      heart.style.position = 'fixed';
-      heart.style.left = `${x}px`;
-      heart.style.top = `${y}px`;
-      heart.style.fontSize = '24px';
-      heart.style.pointerEvents = 'none';
-      heart.style.zIndex = '9999';
-      heart.style.transition = 'all 1s ease-out';
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.style.transform = `translate(${(Math.random() - 0.5) * 80}px, -100px) scale(1.5)`;
-        heart.style.opacity = '0';
-      }, 20);
-
-      setTimeout(() => heart.remove(), 1050);
-    }
-
-    // Lời chúc ngẫu nhiên (Fortune)
-    const fortunes = [
-      "\"Hôm nay bạn sẽ gặp một điều bất ngờ ngọt ngào như kẹo bông gòn!\"",
-      "\"Mọi khó khăn hôm nay rồi sẽ tan biến như bọt cà phê sữa! Hãy cười lên nào! ☕\"",
-      "\"Ai đó đang thầm nghĩ về nụ cười của bạn đấy nhé! ✨\"",
-      "\"Bạn xứng đáng được nghỉ ngơi và tự thưởng cho mình một ly trà sữa trân châu! 🧋\"",
-      "\"Chúc bạn một ngày ngập tràn ánh nắng và những cái dụi đầu ấm áp từ các bé mèo! 🐱\""
-    ];
-    function newFortune() {
-      const fText = document.getElementById('fortuneText');
-      const randomF = fortunes[Math.floor(Math.random() * fortunes.length)];
-      fText.textContent = randomF;
-    }
-
-    // Sao chép Email
-    function copyEmail() {
-      const email = document.getElementById('myEmailText').innerText;
-      const tempInput = document.createElement('input');
-      tempInput.value = email;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand('copy');
-      document.body.removeChild(tempInput);
-
-      const btn = event.target;
-      const originalText = btn.innerText;
-      btn.innerText = 'Đã chép! ✨';
-      btn.classList.add('bg-rose-500', 'text-white');
-      setTimeout(() => {
-        btn.innerText = originalText;
-        btn.classList.remove('bg-rose-500', 'text-white');
-      }, 1800);
-    }
-
-    // Xử lý gửi biểu mẫu tin nhắn
-    function handleMessageSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('messageForm');
-      const toast = document.getElementById('formSuccessToast');
-      toast.classList.remove('hidden');
-      form.reset();
-
-      // Bắn tim ăn mừng
-      for (let i = 0; i < 8; i++) {
-        setTimeout(() => {
-          spawnHeart(window.innerWidth / 2 + (Math.random() * 120 - 60), window.innerHeight / 2);
-        }, i * 100);
-      }
-
-      setTimeout(() => {
-        toast.classList.add('hidden');
-      }, 4000);
-    }
-  </script>
-</body>
-</html>
+        <div class="bg-white
