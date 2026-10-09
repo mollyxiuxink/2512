@@ -83,58 +83,7 @@
             color: #6b4450;
         }
 
-        /* 2. Gallery Ảnh (Khung Chữ Nhật Dọc) */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
-        .art-card {
-            background: #fff5f7;
-            border-radius: 20px;
-            overflow: hidden;
-            border: 2px solid #ffc0cb;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-        .art-card:hover {
-            transform: translateY(-8px) rotate(1deg);
-            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
-        }
-        .art-card img {
-            width: 100%;
-            height: 340px; /* Tỉ lệ dọc */
-            object-fit: cover;
-            display: block;
-            border-bottom: 2px dashed #ffc0cb;
-        }
-        .art-info {
-            padding: 15px;
-            text-align: center;
-        }
-        .art-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #ff1493;
-            margin-bottom: 5px;
-        }
-        .art-desc {
-            font-size: 0.85rem;
-            color: #8b5a68;
-        }
-        .heart-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            color: #ff69b4;
-            font-weight: bold;
-        }
-
-        /* 3. Phần Liên Hệ */
+        /* 2. Phần Liên Hệ */
         .contact-links {
             display: flex;
             justify-content: center;
@@ -160,86 +109,8 @@
             box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
         }
 
-        footer {
-            text-align: center;
-            color: #b05c78;
-            font-size: 0.85rem;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>🎀 Chào Mừng Đến Với Thế Giới Của Tôi 🎀</h1>
-            <p>Góc nhỏ lưu giữ niềm vui, ảnh xinh và những điều dễ thương ✨🌸</p>
-        </header>
-
-        <!-- 1. Phần Giới Thiệu -->
-        <section id="about">
-            <h2 class="section-title">✨ Về Tôi ✨</h2>
-            <div class="intro-content">
-                <img src="https://picsum.photos/300/300?random=99" alt="Avatar" class="avatar">
-                <div class="intro-text">
-                    <p>Xin chào! Mình là <b>Molly</b> 🌷</p>
-                    <p>Mình thích chụp ảnh, thích những điều nhỏ nhặt đáng yêu và màu hồng ngọt ngào. Trang web này được tạo ra để lưu giữ những khoảnh khắc đẹp nhất trong hành trình của mình!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. Gallery Ảnh Dọc -->
-        <section id="gallery">
-            <h2 class="section-title">📸 Bảo Tàng Kỷ Niệm 📸</h2>
-            <div class="gallery">
-                <!-- Ảnh 1 -->
-                <div class="art-card">
-                    <span class="heart-badge">💖 01</span>
-                    <img src="https://picsum.photos/600/800?random=10" alt="Kỷ niệm 1">
-                    <div class="art-info">
-                        <div class="art-title">Khoảnh Khắc #1</div>
-                        <div class="art-desc">Một ngày tràn ngập nắng ấm 🌷</div>
-                    </div>
-                </div>
-
-                <!-- Ảnh 2 -->
-                <div class="art-card">
-                    <span class="heart-badge">💖 02</span>
-                    <img src="https://picsum.photos/600/800?random=11" alt="Kỷ niệm 2">
-                    <div class="art-info">
-                        <div class="art-title">Khoảnh Khắc #2</div>
-                        <div class="art-desc">Góc nhỏ yêu thích nhất ✨</div>
-                    </div>
-                </div>
-
-                <!-- Ảnh 3 -->
-                <div class="art-card">
-                    <span class="heart-badge">💖 03</span>
-                    <img src="https://picsum.photos/600/800?random=12" alt="Kỷ niệm 3">
-                    <div class="art-info">
-                        <div class="art-title">Khoảnh Khắc #3</div>
-                        <div class="art-desc">Nụ cười và sự ngọt ngào 🎀</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Thông Tin Liên Hệ -->
-        <section id="contact">
-            <h2 class="section-title">💌 Kết Nối Với Mình 💌</h2>
-            <p style="text-align: center; margin-bottom: 15px;">Ghé qua các trang mạng xã hội của mình chơi nha!</p>
-            <div class="contact-links">
-                <a href="https://facebook.com" target="_blank" class="contact-btn">Facebook 🌸</a>
-                <a href="https://instagram.com" target="_blank" class="contact-btn">Instagram 📸</a>
-                <a href="https://tiktok.com" target="_blank" class="contact-btn">TikTok 🎵</a>
-            </div>
-        </section>
-
-        <footer>
-            <p>Made with 💕 by Molly | 2026</p>
-        </footer>
-    </div>
-
-</body>
-</html>
+        /* 3. Gallery Ảnh (Khung Chữ Nhật Dọc) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
