@@ -226,7 +226,7 @@
               </li>
               <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
                 <span class="font-semibold text-rose-700">🧠 MBTI:</span>
-                <span class="font-bold text-purple-600">INTJ </span>
+                <span class="font-bold text-purple-600">ISFJ Người bảo vệ</span>
               </li>
               <li class="flex items-center justify-between bg-pink-pastel/60 px-3 py-1.5 rounded-xl">
                 <span class="font-semibold text-rose-700">🎨 Màu Yêu Thích:</span>
@@ -453,7 +453,7 @@
       </div>
     </section>
 
-    <!-- Liên hệ -->
+    <!-- Liên hệ & Donate QR -->
     <section id="contact" class="scroll-mt-24">
       <div class="text-center mb-10">
         <h2 class="text-2xl sm:text-3xl font-bubble font-bold text-rose-600 flex items-center justify-center gap-2">
@@ -463,12 +463,14 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 sm:p-7 kawaii-shadow relative">
+        
+        <!-- Cột Trái: Hòm thư thu nhỏ lại (bỏ bớt khoảng trống) -->
+        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 sm:p-6 kawaii-shadow relative">
           <div class="absolute -top-3 right-6 bg-pink-100 text-rose-600 text-xs font-bold px-3 py-1 rounded-full border border-rose-300">
             Hòm Thư
           </div>
 
-          <form id="messageForm" action="https://formspree.io/f/mgaokjwl" method="POST" onsubmit="handleMessageSubmit(event)" class="space-y-4">
+          <form id="messageForm" action="https://formspree.io/f/mgaokjwl" method="POST" onsubmit="handleMessageSubmit(event)" class="space-y-3">
             <div>
               <label class="block text-xs font-bold text-rose-700 mb-1" for="senderName">
                 Tên / Biệt danh của bạn:
@@ -479,7 +481,7 @@
                 name="name" 
                 required 
                 placeholder=" "
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
+                class="w-full px-3.5 py-2 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
               >
             </div>
 
@@ -490,7 +492,7 @@
               <select 
                 id="senderMood" 
                 name="mood" 
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition cursor-pointer"
+                class="w-full px-3.5 py-2 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition cursor-pointer"
               >
                 <option value="🥰">🥰 Rất vui vẻ và yêu đời</option>
                 <option value="😴">😴 Hơi buồn ngủ nhưng vẫn mỉm cười</option>
@@ -506,26 +508,27 @@
               <textarea 
                 id="senderMessage" 
                 name="message" 
-                rows="4" 
+                rows="3" 
                 required 
                 placeholder="Viết vài dòng chia sẻ tại đây..."
-                class="w-full px-4 py-2.5 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
+                class="w-full px-3.5 py-2 rounded-2xl border-2 border-rose-200 focus:outline-none focus:border-rose-400 bg-pink-pastel/30 text-rose-900 text-sm font-medium transition"
               ></textarea>
             </div>
 
             <button 
               type="submit" 
-              class="w-full py-3 rounded-2xl bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white font-bold text-sm shadow-md hover:shadow-lg active:scale-98 transition flex items-center justify-center gap-2"
+              class="w-full py-2.5 rounded-2xl bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white font-bold text-sm shadow-md hover:shadow-lg active:scale-98 transition flex items-center justify-center gap-2"
             >
               <i class="fa-solid fa-paper-plane"></i> Gửi Tin Ngay ✨
             </button>
           </form>
 
-          <div id="formSuccessToast" class="hidden mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-700 text-xs font-semibold text-center animate-bounce-slow">
+          <div id="formSuccessToast" class="hidden mt-3 p-2.5 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-700 text-xs font-semibold text-center animate-bounce-slow">
             🎉 Đã nhận được lời nhắn của bạn rồi nha! Cảm ơn nhaa! 💖
           </div>
         </div>
 
+        <!-- Cột Phải: Kết nối & Ô QR Donate STK -->
         <div class="space-y-4">
           <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow">
             <h3 class="font-bubble font-bold text-lg text-rose-600 mb-3 flex items-center gap-2">
@@ -585,6 +588,32 @@
               <button onclick="copyEmail()" class="text-xs bg-white text-rose-500 hover:bg-rose-100 font-bold px-3 py-1.5 rounded-xl border border-rose-300 shadow-sm transition active:scale-95">
                 Sao chép
               </button>
+            </div>
+          </div>
+
+          <!-- Ô QR Donate STK Kẹo Ngọt -->
+          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow text-center relative overflow-hidden">
+            <div class="absolute -top-3 left-6 bg-amber-100 text-amber-700 text-[11px] font-bold px-3 py-1 rounded-full border border-amber-300">
+              ☕ Mời Trà Sữa / Donate
+            </div>
+            
+            <div class="mt-2 flex flex-col sm:flex-row items-center gap-4">
+              <!-- Khung QR Code -->
+              <div class="w-28 h-28 bg-rose-50 border-2 border-rose-200 rounded-2xl p-1.5 flex-shrink-0 flex items-center justify-center shadow-inner group">
+                <!-- Thay link ảnh QR của bạn vào src="ma-qr.jpg" hoặc để mặc định dùng ảnh placeholder -->
+                <img src="ma-qr.png" alt="QR Donate" class="w-full h-full object-contain rounded-xl" onerror="this.src='https://placehold.co/300x300/ffe4e9/9f1239?text=QR+STK'">
+              </div>
+
+              <!-- Thông tin STK -->
+              <div class="text-left space-y-1 text-xs">
+                <p class="font-bold text-rose-700 text-sm flex items-center gap-1">
+                  <span>🌸 Ngân Hàng / Momo</span>
+                </p>
+                <p class="text-rose-900/80 font-medium">Tên ngân hàng: <span class="font-bold">MB Bank / Vietcombank</span></p>
+                <p class="text-rose-900/80 font-medium">Số tài khoản: <span class="font-bold text-rose-600 select-all bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200">0123456789</span></p>
+                <p class="text-rose-900/80 font-medium">Chủ tài khoản: <span class="font-bold">NGUYEN HUU HUY HOANG</span></p>
+                <p class="text-[11px] text-rose-400 italic mt-1">"Cảm ơn các cậu đã ủng hộ quỹ trà sữa cho Molly nhé! 🧋💖"</p>
+              </div>
             </div>
           </div>
 
