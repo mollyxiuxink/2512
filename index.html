@@ -453,7 +453,7 @@
       </div>
     </section>
 
-    <!-- Liên hệ & Donate QR -->
+    <!-- Liên hệ & Hòm Thư + QR + Lời chúc (Cân đối 4 khối hình chữ nhật) -->
     <section id="contact" class="scroll-mt-24">
       <div class="text-center mb-10">
         <h2 class="text-2xl sm:text-3xl font-bubble font-bold text-rose-600 flex items-center justify-center gap-2">
@@ -462,10 +462,11 @@
         <p class="text-rose-700/70 text-sm mt-1">Đừng ngại để lại một lời chúc hoặc lời nhắn nhé!</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <!-- Lưới 2 cột: Cột trái (Hòm Thư), Cột phải (Kết nối + QR Donate + Lời chúc) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         
-        <!-- Cột Trái: Hòm thư thu nhỏ lại (bỏ bớt khoảng trống) -->
-        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 sm:p-6 kawaii-shadow relative">
+        <!-- Cột Trái: Hòm thư thu nhỏ chiều cao -->
+        <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow relative flex flex-col justify-between">
           <div class="absolute -top-3 right-6 bg-pink-100 text-rose-600 text-xs font-bold px-3 py-1 rounded-full border border-rose-300">
             Hòm Thư
           </div>
@@ -528,104 +529,103 @@
           </div>
         </div>
 
-        <!-- Cột Phải: Kết nối & Ô QR Donate STK -->
-        <div class="space-y-4">
-          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-6 kawaii-shadow">
-            <h3 class="font-bubble font-bold text-lg text-rose-600 mb-3 flex items-center gap-2">
+        <!-- Cột Phải: Xếp 3 khối hình chữ nhật chồng lên nhau -->
+        <div class="space-y-4 flex flex-col justify-between">
+          
+          <!-- Khối 1: Kết Nối Mạng Xã Hội -->
+          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow">
+            <h3 class="font-bubble font-bold text-base text-rose-600 mb-2 flex items-center gap-2">
               <span>🌟</span> Kết Nối Với Molly Nhé
             </h3>
-            <p class="text-xs text-rose-800/80 mb-5 leading-relaxed">
-              Tớ luôn online ở các trang mạng xã hội dưới này. Nhắn cho Molly để trò chuyện
+            <p class="text-xs text-rose-800/80 mb-3 leading-relaxed">
+              Tớ luôn online ở các trang mạng xã hội dưới này:
             </p>
 
-            <div class="grid grid-cols-2 gap-3">
-              <a href="https://www.facebook.com/to.uyen.116421/?http_ref=eyJ0cyI6MTc5MTU1MDk2MTAwMCwiciI6IiJ9" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-blue-50/70 hover:bg-blue-100 text-blue-600 border border-blue-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-blue-500 shadow-sm text-sm">
+            <div class="grid grid-cols-2 gap-2.5">
+              <a href="https://www.facebook.com/to.uyen.116421/?http_ref=eyJ0cyI6MTc5MTU1MDk2MTAwMCwiciI6IiJ9" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-blue-50/70 hover:bg-blue-100 text-blue-600 border border-blue-200/70 transition-transform hover:-translate-y-0.5">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-blue-500 shadow-sm text-xs">
                   <i class="fa-brands fa-facebook-f"></i>
                 </span>
                 <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Facebook</div>
-                  <div class="text-[10px] text-blue-400 truncate">fb.com/Molly</div>
+                  <div class="text-[11px] font-bold">Facebook</div>
+                  <div class="text-[9px] text-blue-400 truncate">fb.com/Molly</div>
                 </div>
               </a>
 
-              <a href="https://www.instagram.com/pitiyuuu_" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-pink-50/70 hover:bg-pink-100 text-pink-600 border border-pink-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-pink-500 shadow-sm text-sm">
+              <a href="https://www.instagram.com/pitiyuuu_" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-pink-50/70 hover:bg-pink-100 text-pink-600 border border-pink-200/70 transition-transform hover:-translate-y-0.5">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-500 shadow-sm text-xs">
                   <i class="fa-brands fa-instagram"></i>
                 </span>
                 <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Instagram</div>
-                  <div class="text-[10px] text-pink-400 truncate">@pitiyuuu_</div>
+                  <div class="text-[11px] font-bold">Instagram</div>
+                  <div class="text-[9px] text-pink-400 truncate">@pitiyuuu_</div>
                 </div>
               </a>
 
-              <a href="https://www.tiktok.com/@touyenmeomeo?_r=1&_t=ZS-9AQTGW4kM5t" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-stone-50 hover:bg-stone-100 text-stone-800 border border-stone-200 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-stone-800 shadow-sm text-sm">
+              <a href="https://www.tiktok.com/@touyenmeomeo?_r=1&_t=ZS-9AQTGW4kM5t" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-stone-50 hover:bg-stone-100 text-stone-800 border border-stone-200 transition-transform hover:-translate-y-0.5">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-stone-800 shadow-sm text-xs">
                   <i class="fa-brands fa-tiktok"></i>
                 </span>
                 <div class="overflow-hidden">
-                  <div class="text-xs font-bold">TikTok</div>
-                  <div class="text-[10px] text-stone-500 truncate">@Molly_</div>
+                  <div class="text-[11px] font-bold">TikTok</div>
+                  <div class="text-[9px] text-stone-500 truncate">@Molly_</div>
                 </div>
               </a>
 
-              <a href="https://threads.net" target="_blank" rel="noopener" class="flex items-center gap-3 p-3 rounded-2xl bg-purple-50/70 hover:bg-purple-100 text-purple-600 border border-purple-200/70 transition-transform hover:-translate-y-1">
-                <span class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-purple-600 shadow-sm text-sm">
+              <a href="https://threads.net" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-purple-50/70 hover:bg-purple-100 text-purple-600 border border-purple-200/70 transition-transform hover:-translate-y-0.5">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-purple-600 shadow-sm text-xs">
                   <i class="fa-brands fa-threads"></i>
                 </span>
                 <div class="overflow-hidden">
-                  <div class="text-xs font-bold">Threads</div>
-                  <div class="text-[10px] text-purple-400 truncate">@Molly</div>
+                  <div class="text-[11px] font-bold">Threads</div>
+                  <div class="text-[9px] text-purple-400 truncate">@Molly</div>
                 </div>
               </a>
             </div>
 
-            <div class="mt-4 p-3.5 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-between">
-              <div class="flex items-center gap-2.5 text-xs text-rose-700 font-semibold truncate">
-                <i class="fa-regular fa-envelope text-base text-rose-500"></i>
+            <div class="mt-3 p-2.5 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-between">
+              <div class="flex items-center gap-2 text-xs text-rose-700 font-semibold truncate">
+                <i class="fa-regular fa-envelope text-sm text-rose-500"></i>
                 <span id="myEmailText">uyennguancut@gmail.com</span>
               </div>
-              <button onclick="copyEmail()" class="text-xs bg-white text-rose-500 hover:bg-rose-100 font-bold px-3 py-1.5 rounded-xl border border-rose-300 shadow-sm transition active:scale-95">
+              <button onclick="copyEmail()" class="text-[11px] bg-white text-rose-500 hover:bg-rose-100 font-bold px-2.5 py-1 rounded-xl border border-rose-300 shadow-sm transition active:scale-95">
                 Sao chép
               </button>
             </div>
           </div>
 
-          <!-- Ô QR Donate STK Kẹo Ngọt -->
-          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow text-center relative overflow-hidden">
+          <!-- Khối 2: Ô QR Donate STK (Nằm ngay dưới hòm thư và trên lời chúc) -->
+          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow relative">
             <div class="absolute -top-3 left-6 bg-amber-100 text-amber-700 text-[11px] font-bold px-3 py-1 rounded-full border border-amber-300">
               ☕ Mời Trà Sữa / Donate
             </div>
             
-            <div class="mt-2 flex flex-col sm:flex-row items-center gap-4">
-              <!-- Khung QR Code -->
-              <div class="w-28 h-28 bg-rose-50 border-2 border-rose-200 rounded-2xl p-1.5 flex-shrink-0 flex items-center justify-center shadow-inner group">
-                <!-- Thay link ảnh QR của bạn vào src="ma-qr.jpg" hoặc để mặc định dùng ảnh placeholder -->
+            <div class="mt-1 flex flex-col sm:flex-row items-center gap-3">
+              <div class="w-24 h-24 bg-rose-50 border-2 border-rose-200 rounded-2xl p-1.5 flex-shrink-0 flex items-center justify-center shadow-inner">
                 <img src="ma-qr.png" alt="QR Donate" class="w-full h-full object-contain rounded-xl" onerror="this.src='https://placehold.co/300x300/ffe4e9/9f1239?text=QR+STK'">
               </div>
 
-              <!-- Thông tin STK -->
-              <div class="text-left space-y-1 text-xs">
-                <p class="font-bold text-rose-700 text-sm flex items-center gap-1">
-                  <span>🌸 Ngân Hàng / Momo</span>
-                </p>
-                <p class="text-rose-900/80 font-medium">Tên ngân hàng: <span class="font-bold">MB Bank / Vietcombank</span></p>
-                <p class="text-rose-900/80 font-medium">Số tài khoản: <span class="font-bold text-rose-600 select-all bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200">0123456789</span></p>
-                <p class="text-rose-900/80 font-medium">Chủ tài khoản: <span class="font-bold">NGUYEN HUU HUY HOANG</span></p>
-                <p class="text-[11px] text-rose-400 italic mt-1">"Cảm ơn các cậu đã ủng hộ quỹ trà sữa cho Molly nhé! 🧋💖"</p>
+              <div class="text-left space-y-0.5 text-xs w-full">
+                <p class="font-bold text-rose-700 text-xs">🌸 Chuyển khoản / Momo</p>
+                <p class="text-rose-900/80 font-medium">Ngân hàng: <span class="font-bold">MB Bank / Vietcombank</span></p>
+                <p class="text-rose-900/80 font-medium">STK: <span class="font-bold text-rose-600 select-all bg-rose-50 px-1 py-0.5 rounded border border-rose-200">0123456789</span></p>
+                <p class="text-rose-900/80 font-medium">Chủ TK: <span class="font-bold">NGUYEN HUU HUY HOANG</span></p>
+                <p class="text-[10px] text-rose-400 italic mt-0.5">"Cảm ơn các cậu đã ủng hộ quỹ trà sữa cho Molly nhé! 🧋💖"</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-5 kawaii-shadow text-center">
+          <!-- Khối 3: Bánh May Mắn (Nằm dưới QR Donate) -->
+          <div class="bg-white/90 backdrop-blur-sm border-2 border-rose-200 rounded-3xl p-4 kawaii-shadow text-center">
             <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">🥠 Bánh May Mắn Của Ngày</span>
-            <p id="fortuneText" class="font-hand text-xl text-rose-700 mt-1 font-bold">
+            <p id="fortuneText" class="font-hand text-lg text-rose-700 mt-0.5 font-bold">
               "Hôm nay bạn sẽ gặp một điều bất ngờ ngọt ngào như kẹo bông gòn!"
             </p>
-            <button onclick="newFortune()" class="mt-2 text-xs text-rose-500 hover:text-rose-700 font-bold underline decoration-dotted">
+            <button onclick="newFortune()" class="mt-1 text-xs text-rose-500 hover:text-rose-700 font-bold underline decoration-dotted">
               Đổi lời chúc khác ✨
             </button>
           </div>
+
         </div>
       </div>
     </section>
@@ -650,7 +650,7 @@
     </div>
   </footer>
 
-  <!-- Lightbox Modal Phóng To Ảnh (Hiển thị trọn vẹn 100% kích thước) -->
+  <!-- Lightbox Modal Phóng To Ảnh -->
   <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-xl w-full p-5 border-4 border-rose-200 shadow-2xl relative transform transition-all scale-95" id="lightboxContent">
       <button onclick="closeLightbox()" class="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-rose-400 text-white font-bold text-base flex items-center justify-center shadow-md hover:bg-rose-500 transition z-10">
@@ -665,7 +665,7 @@
   </div>
 
   <script>
-    // Dữ liệu ảnh phục vụ Lightbox (Đã thêm sẵn 3 slot mới)
+    // Dữ liệu ảnh phục vụ Lightbox
     const galleryData = [
       {
         src: "chrome-capture-2026-10-09.gif",
@@ -697,7 +697,6 @@
         title: "🐰ྀི",
         desc: "♡"
       },
-      // 3 Slot ảnh mới thêm vào
       {
         src: "ten-anh-7.jpg",
         title: "Tiêu đề ảnh 7 ☀️",
@@ -715,7 +714,6 @@
       }
     ];
 
-    // Điều khiển Lightbox
     function openLightbox(index) {
       const modal = document.getElementById('lightboxModal');
       const img = document.getElementById('lightboxImg');
@@ -848,7 +846,6 @@
       }
     }
 
-    // Cập nhật thanh tiến trình chạy theo bài hát
     audio.addEventListener('timeupdate', () => {
       if (audio.duration) {
         const percent = (audio.currentTime / audio.duration) * 100;
@@ -856,7 +853,6 @@
       }
     });
 
-    // Cho phép bấm vào thanh tiến trình để tua nhạc
     document.getElementById('progressBarContainer').addEventListener('click', (e) => {
       const rect = e.currentTarget.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
